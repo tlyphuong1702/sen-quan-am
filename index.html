@@ -191,8 +191,10 @@ footer{
 
 .parts-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
 }
 
 .part-card {
@@ -218,6 +220,12 @@ footer{
     font-size: 20px;
     font-weight: bold;
     color: #d32f2f;
+}
+
+@media (max-width: 1200px) {
+    .parts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -263,7 +271,18 @@ footer{
 
 .lotus-part-card:hover::before {
     background: rgba(255,255,255,0.82);
-}    
+}
+
+.other-lotus-parts h2 {
+    text-align: center;
+}
+
+.section-desc {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+}
+    
 </style>
 </head>
 <script>
