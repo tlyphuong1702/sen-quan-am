@@ -115,7 +115,84 @@ footer{
 }
 </style>
 </head>
+<script>
 
+function showTrang() {
+alert(`
+
+SEN QUAN ÂM TRẮNG
+
+Sen Quan Âm trắng (còn gọi là sen Bách Diệp trắng) là giống sen cảnh quý hiếm nổi bật với form hoa lớn (bằng hai bàn tay), chứa hàng trăm cánh nhỏ li ti xếp đan xen.
+
+CÁC ĐẶC ĐIỂM NỔI BẬT
+
+• Hình dáng hoa:
+Nụ hoa hình cầu. Khi nở có đường kính 15–20cm, cánh dày, xốp và nhiều lớp.
+
+• Màu sắc:
+Màu trắng tinh khiết, đôi khi phớt xanh nhẹ.
+
+• Thân và lá:
+Lá tròn lớn, vươn cao khỏi mặt nước.
+
+• Đặc tính sinh trưởng:
+Sai hoa, sức sống mạnh, độ bền cao.
+
+• Ý nghĩa phong thủy:
+Tượng trưng cho sự thanh tịnh, bình an và an yên trong tâm hồn.
+
+`);
+}
+
+function showHong() {
+alert(`
+
+SEN QUAN ÂM HỒNG
+
+LƯU Ý KHI MUA SEN QUAN ÂM HỒNG
+
+Khách mua sen quan âm hồng nhà mình cần lưu ý phải ngâm hoa sen ngập trong thùng tới hết phần thân sen (khi chưa sử dụng).
+
+Khi đem cắm thì nhớ quấn băng keo với cây tăm như video hướng dẫn.
+
+Nếu không sen sẽ bị gục vì thân sen quan âm hồng rất yếu.
+
+LƯU Ý NÀY KHÔNG ÁP DỤNG CHO HOA SEN QUAN ÂM TRẮNG VÀ SEN JUWABA HỒNG.
+
+`);
+}
+
+function showJuwaba() {
+alert(`
+
+SEN JUWABA
+
+Sen Juwaba (hay sen Pagoda) là giống sen ngoại nhập có hoa màu hồng phấn, cánh kép, cực kỳ sai hoa và nở liên tục.
+
+ĐẶC ĐIỂM NỔI BẬT
+
+• Form hoa:
+Hoa hồng cánh kép, cánh dày nhiều lớp.
+
+• Thân và lá:
+Chiều cao khoảng 50–60cm, lá xanh đậm.
+
+• Khả năng ra hoa:
+Nở liên tục quanh năm nếu đủ nắng.
+
+• Sức sống:
+Ít sâu bệnh, chịu lạnh tốt.
+
+• Nhân giống:
+Gieo hạt hoặc tách chồi ngó.
+
+• Độ bền hoa:
+4–6 ngày.
+
+`);
+}
+
+</script>
 <body>
 
 <header>
@@ -132,7 +209,7 @@ footer{
             <div class="card-content">
                 <h3>Sen Quan Âm Trắng</h3>
                 <p>Màu trắng tinh khiết, cánh đều đẹp.</p>
-                <button class="btn">Xem chi tiết</button>
+                <button class="btn" onclick="showTrang()">Xem chi tiết</button>
             </div>
         </div>
 
@@ -141,7 +218,7 @@ footer{
             <div class="card-content">
                 <h3>Sen Quan Âm Hồng</h3>
                 <p>Màu hồng đậm, rất được ưa chuộng.</p>
-                <button class="btn">Xem chi tiết</button>
+                <button class="btn" onclick="showHong()">Xem chi tiết</button>
             </div>
         </div>
 
@@ -150,7 +227,7 @@ footer{
             <div class="card-content">
                 <h3>Sen Juwaba</h3>
                 <p>Giống sen độc đáo, hoa lớn và bền.</p>
-                <button class="btn">Xem chi tiết</button>
+                <button class="btn" onclick="showJuwaba()">Xem chi tiết</button>
             </div>
         </div>
 
