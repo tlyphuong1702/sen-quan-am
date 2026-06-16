@@ -71,7 +71,36 @@ header h1{
     background:white;
     padding:40px;
 }
+.partners{
+    padding:40px;
+    background:#fafafa;
+}
 
+.partner-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.partner-card{
+    text-decoration:none;
+    color:black;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.partner-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.partner-card h3{
+    padding:15px;
+    text-align:center;
+}
 .review{
     margin-bottom:20px;
     border-left:4px solid #4CAF50;
