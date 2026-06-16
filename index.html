@@ -1,27 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sen Quan Âm Cần Đước</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+    background:url("images/banner.jpg") center/cover;
+    height:400px;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:50px;
+    background:rgba(0,0,0,0.4);
+    padding:15px;
+    border-radius:10px;
+}
+
+.products{
+    padding:40px;
+}
+
+.card-container{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.btn{
+    background:#4CAF50;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.feedback{
+    background:white;
+    padding:40px;
+}
+
+.review{
+    margin-bottom:20px;
+    border-left:4px solid #4CAF50;
+    padding-left:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
 
 <body>
 
-<h1>Sen Quan Âm Cần Đước</h1>
+<header>
+    <h1>Sen Quan Âm Cần Đước</h1>
+</header>
 
-<p>
-Hoa sen tươi được trồng tại Cần Đước - Long An.
-</p>
+<section class="products">
+    <h2>Các Giống Sen</h2>
 
-<h2>Liên hệ</h2>
+    <div class="card-container">
 
-<p>
-Điện thoại: 0773939219
-</p>
+        <div class="card">
+            <img src="images/sen-trang.jpg" alt="">
+            <div class="card-content">
+                <h3>Sen Quan Âm Trắng</h3>
+                <p>Màu trắng tinh khiết, cánh đều đẹp.</p>
+                <button class="btn">Xem chi tiết</button>
+            </div>
+        </div>
 
-<a href="https://zalo.me/0773939219">
-Đặt hàng qua Zalo
-</a>
+        <div class="card">
+            <img src="images/sen-hong.jpg" alt="">
+            <div class="card-content">
+                <h3>Sen Quan Âm Hồng</h3>
+                <p>Màu hồng đậm, rất được ưa chuộng.</p>
+                <button class="btn">Xem chi tiết</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/sen-juwaba.jpg" alt="">
+            <div class="card-content">
+                <h3>Sen Juwaba</h3>
+                <p>Giống sen độc đáo, hoa lớn và bền.</p>
+                <button class="btn">Xem chi tiết</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="feedback">
+    <h2>Khách Hàng Nói Gì?</h2>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐ "Hoa rất đẹp, nở đều và giao đúng hẹn."
+        <br><strong>- Chị Lan, TP.HCM</strong>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐ "Sen khỏe, đóng gói cẩn thận."
+        <br><strong>- Anh Hùng, Long An</strong>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐ "Sẽ tiếp tục đặt mua mùa tới."
+        <br><strong>- Chị Mai, Cần Thơ</strong>
+    </div>
+</section>
+
+<footer>
+    <p>📞 09xx xxx xxx</p>
+    <p>📍 Cần Đước, Long An</p>
+</footer>
 
 </body>
 </html>
