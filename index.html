@@ -125,23 +125,25 @@ footer{
     color:#2e7d32;
 }
 
-.story-section p{
-    max-width:1000px;
-    margin:20px auto;
-    line-height:1.8;
-    font-size:18px;
+.story-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.story-gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-    margin-top:40px;
+.story-gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
-.story-gallery img{
-    width:100%;
-    border-radius:10px;
+.story-gallery p {
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+    line-height: 1.6;
 }
 
 .story-caption{
