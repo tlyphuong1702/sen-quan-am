@@ -230,7 +230,41 @@ footer{
     .parts-grid {
         grid-template-columns: 1fr;
     }
-}    
+}
+
+.lotus-part-card {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.lotus-part-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.88);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.lotus-part-card > * {
+    position: relative;
+    z-index: 2;
+}
+.lotus-part-card {
+    transition: transform .3s ease;
+}
+
+.lotus-part-card:hover {
+    transform: translateY(-5px);
+}
+
+.lotus-part-card:hover::before {
+    background: rgba(255,255,255,0.82);
+}
+    
 </style>
 </head>
 <script>
@@ -355,50 +389,70 @@ Gieo hạt hoặc tách chồi ngó.
 </section>
     
 <section id="bo-phan-sen">
-    <h2>🌿 Các Bộ Phận Khác Của Sen</h2>
-    <p class="section-desc">
-        Ngoài hoa sen, chúng tôi còn cung cấp nhiều sản phẩm khác từ cây sen phục vụ nhu cầu ẩm thực, trà thảo mộc, trang trí và cây giống.
-    </p>
+    <section id="bo-phan-khac-cua-sen" class="other-lotus-parts">
 
-    <div class="parts-grid">
+```
+<h2>🌿 Các Bộ Phận Khác Của Sen</h2>
 
-        <div class="part-card">
+<p class="section-desc">
+    Ngoài hoa sen, chúng tôi còn cung cấp nhiều sản phẩm khác từ cây sen phục vụ nhu cầu ẩm thực,
+    trà thảo mộc, trang trí và cây giống.
+</p>
+
+<div class="parts-grid">
+
+    <div class="lotus-part-card" style="background-image:url('la-sen-tuoi.jpg');">
+        <div class="content">
             <h3>🍃 Lá Sen Tươi</h3>
-            <p>Dùng gói xôi, hấp thực phẩm, trang trí món ăn.</p>
+            <p>Dùng gói xôi, hấp thực phẩm và trang trí món ăn.</p>
             <div class="price">30.000 VNĐ/kg</div>
         </div>
+    </div>
 
-        <div class="part-card">
+    <div class="lotus-part-card" style="background-image:url('la-sen-kho.jpg');">
+        <div class="content">
             <h3>🍂 Lá Sen Khô</h3>
             <p>Dùng pha trà, làm dược liệu và thảo mộc.</p>
             <div class="price">200.000 VNĐ/kg</div>
         </div>
+    </div>
 
-        <div class="part-card">
+    <div class="lotus-part-card" style="background-image:url('dai-sen.jpg');">
+        <div class="content">
             <h3>🟢 Đài Sen Tươi</h3>
-            <p>Dùng cắm hoa, trang trí và lấy hạt sen.</p>
+            <p>Dùng cắm hoa, trang trí và thu hoạch hạt sen tươi.</p>
             <div class="price">40.000 VNĐ/kg</div>
         </div>
+    </div>
 
-        <div class="part-card">
+    <div class="lotus-part-card" style="background-image:url('ngo-sen.jpg');">
+        <div class="content">
             <h3>🌱 Ngó Sen Tươi</h3>
             <p>Nguyên liệu chế biến các món gỏi và ẩm thực.</p>
             <div class="price">40.000 VNĐ/kg</div>
         </div>
+    </div>
 
-        <div class="part-card">
+    <div class="lotus-part-card" style="background-image:url('cu-sen.jpg');">
+        <div class="content">
             <h3>🥔 Củ Sen</h3>
             <p>Thực phẩm bổ dưỡng, chế biến nhiều món ăn.</p>
             <div class="price">50.000 VNĐ/kg</div>
         </div>
+    </div>
 
-        <div class="part-card">
+    <div class="lotus-part-card" style="background-image:url('chau-sen-giong.jpg');">
+        <div class="content">
             <h3>🪴 Chậu Sen Giống</h3>
             <p>Chậu sen giống khỏe mạnh, dễ chăm sóc.</p>
             <div class="price">80.000 VNĐ/chậu</div>
         </div>
-
     </div>
+
+</div>
+
+</section>
+
 </section>
     
 <section class="partners">
